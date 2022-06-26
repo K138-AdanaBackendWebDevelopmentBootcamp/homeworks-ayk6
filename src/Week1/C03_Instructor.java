@@ -1,6 +1,6 @@
 package Week1;
 
-public class Instructor {
+public class C03_Instructor {
 
     // Instructors who have a name, an address and a phone number could
     // instruct at least one or more courses.
@@ -35,7 +35,7 @@ public class Instructor {
         this.phoneNumber = phoneNumber;
     }
 
-    public Instructor(String name, String adress, String phoneNumber) {
+    public C03_Instructor(String name, String adress, String phoneNumber) {
         this.name = name;
         this.adress = adress;
         this.phoneNumber = phoneNumber;
