@@ -1,6 +1,12 @@
-package Week1;
+package classes.instructor;
 
-public class C04_PermanentInstructor extends C03_Instructor {
+import javax.persistence.*;
+
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+
+public class PermanentInstructor extends Instructor {
+
 
     // There are 2 types of instructors; “visiting researcher” or “permanent
     // instructor”.
@@ -8,12 +14,12 @@ public class C04_PermanentInstructor extends C03_Instructor {
 
     private int fixedSalary;
 
-    public C04_PermanentInstructor(String name, String adress, String phoneNumber, int fixedSalary) {
+    public PermanentInstructor(String name, String adress, String phoneNumber, int fixedSalary) {
         super(name, adress, phoneNumber);
         this.fixedSalary = fixedSalary;
     }
 
-    public C04_PermanentInstructor(String name, String adress, String phoneNumber) {
+    public PermanentInstructor(String name, String adress, String phoneNumber) {
         super(name, adress, phoneNumber);
     }
 

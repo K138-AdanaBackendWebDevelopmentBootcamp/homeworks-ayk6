@@ -1,21 +1,31 @@
-package Week1;
+package classes.student;
 
+import classes.course.Course;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class C01_Student {
+@Entity
+@Inheritance (strategy = InheritanceType.JOINED)
+
+public class Student {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     // A Student who has a name, a birth date, an address, and gender could
     // take zero or more courses.
 
     private String name;
-    private Date birthDate;
+    private int birthDate;
     private String adress;
     private String gender;
 
-    private List<C02_Course> c02CourseList = new ArrayList<>();
+    @ManyToOne
+    private Course course;
 
-    public C01_Student(String name, Date birthDate, String adress, String gender) {
+    public Student(String name, int birthDate, String adress, String gender) {
         this.name = name;
         this.birthDate = birthDate;
         this.adress = adress;
@@ -30,11 +40,11 @@ public class C01_Student {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public int getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(int birthDate) {
         this.birthDate = birthDate;
     }
 

@@ -1,6 +1,6 @@
 package Week1;
 
-public class visitingResearcher extends Instructor{
+public class C05_VisitingResearcher extends C03_Instructor {
 
     // There are 2 types of instructors; “visiting researcher” or “permanent
     // instructor”.
@@ -16,12 +16,12 @@ public class visitingResearcher extends Instructor{
         this.hourlySalary = hourlySalary;
     }
 
-    public visitingResearcher(String name, String adress, String phoneNumber, int hourlySalary) {
+    public C05_VisitingResearcher(String name, String adress, String phoneNumber, int hourlySalary) {
         super(name, adress, phoneNumber);
         this.hourlySalary = hourlySalary;
     }
 
-    public visitingResearcher(String name, String adress, String phoneNumber) {
+    public C05_VisitingResearcher(String name, String adress, String phoneNumber) {
         super(name, adress, phoneNumber);
     }
 }

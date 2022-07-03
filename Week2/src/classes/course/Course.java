@@ -1,9 +1,17 @@
-package Week1;
+package classes.course;
 
+import classes.instructor.Instructor;
+import classes.student.Student;
+
+import javax.persistence.*;
 import java.util.List;
 
-public class C02_Course {
+@Entity
+@Inheritance (strategy = InheritanceType.JOINED)
+public class Course {
 
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     // Each course has a course name, a course code, and a credit score.
     // A course could be instructed by only one instructor.
 
@@ -11,8 +19,9 @@ public class C02_Course {
     private int courseCode;
     private int creditScore;
 
-    private List<C01_Student> studentList;
-    private C03_Instructor instructor;
+    @OneToMany(mappedBy = "course")
+    private List<Student> studentList;
+
 
     public String getCourseName() {
         return courseName;
@@ -38,12 +47,11 @@ public class C02_Course {
         this.creditScore = creditScore;
     }
 
-    public C02_Course(String courseName, int courseCode, int creditScore, List<C01_Student> studentList, C03_Instructor instructor) {
+    public Course(String courseName, int courseCode, int creditScore, List<Student> studentList, Instructor instructor) {
         this.courseName = courseName;
         this.courseCode = courseCode;
         this.creditScore = creditScore;
         this.studentList = studentList;
-        this.instructor = instructor;
 
 
     }
