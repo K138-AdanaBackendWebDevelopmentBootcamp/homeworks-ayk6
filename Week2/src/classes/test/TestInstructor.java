@@ -1,6 +1,9 @@
-package classes.instructor;
+package classes.test;
 
 import classes.course.Course;
+import classes.instructor.Instructor;
+import classes.instructor.PermanentInstructor;
+import classes.instructor.VisitingResearcher;
 import classes.student.Student;
 import classes.utils.EntityManagerUtils;
 
