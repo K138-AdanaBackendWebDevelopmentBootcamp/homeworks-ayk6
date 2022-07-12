@@ -1,19 +1,15 @@
-package classes.student;
+package model;
 
-import classes.course.Course;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @Entity
-@Inheritance (strategy = InheritanceType.JOINED)
-
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "student" ,strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "student", sequenceName = "STUDENT_SEQ_ID")
+
     // A Student who has a name, a birth date, an address, and gender could
     // take zero or more courses.
 
@@ -22,7 +18,7 @@ public class Student {
     private String adress;
     private String gender;
 
-    @ManyToOne
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Course.class,cascade = CascadeType.ALL)
     private Course course;
 
     public Student(String name, int birthDate, String adress, String gender) {

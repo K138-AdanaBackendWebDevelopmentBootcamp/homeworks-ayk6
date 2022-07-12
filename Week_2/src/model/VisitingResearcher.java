@@ -1,17 +1,12 @@
-package classes.instructor;
+package model;
 
 
-import classes.course.Course;
 
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.OneToOne;
-import java.util.List;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-
 public class VisitingResearcher extends Instructor {
 
     // There are 2 types of instructors; “visiting researcher” or “permanent

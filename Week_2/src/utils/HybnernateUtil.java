@@ -1,15 +1,15 @@
-package classes.utils;
+package utils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public final class EntityManagerUtils {
+public class HybnernateUtil {
     static EntityManagerFactory emf = null;
 
-    private EntityManagerUtils(){}
+    private HybnernateUtil(){}
 
-    public static EntityManager getEntityManager(String persistenceUnitName){
+    public static EntityManager getEntityManager(){
         emf = Persistence.createEntityManagerFactory(persistenceUnitName);
         return emf.createEntityManager();
     }

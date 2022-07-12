@@ -1,10 +1,8 @@
-package classes.instructor;
+package model;
 
 import javax.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-
 public class PermanentInstructor extends Instructor {
 
 
@@ -17,10 +15,6 @@ public class PermanentInstructor extends Instructor {
     public PermanentInstructor(String name, String adress, String phoneNumber, int fixedSalary) {
         super(name, adress, phoneNumber);
         this.fixedSalary = fixedSalary;
-    }
-
-    public PermanentInstructor(String name, String adress, String phoneNumber) {
-        super(name, adress, phoneNumber);
     }
 
     public int getFixedSalary() {

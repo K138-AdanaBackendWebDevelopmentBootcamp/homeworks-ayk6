@@ -1,6 +1,4 @@
-package classes.instructor;
-
-import classes.course.Course;
+package model;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,7 +8,8 @@ import java.util.List;
 public class Instructor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "instructor",strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "instructor",sequenceName = "INSTRUCTOR_SEQ_ID")
 
     // Instructors who have a name, an address and a phone number could
     // instruct at least one or more courses.
@@ -20,6 +19,9 @@ public class Instructor {
     private String name;
     private String adress;
     private String phoneNumber;
+
+    @OneToMany(targetEntity = Course.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    private List<Course> courseList;
 
     public String getName() {
         return name;
