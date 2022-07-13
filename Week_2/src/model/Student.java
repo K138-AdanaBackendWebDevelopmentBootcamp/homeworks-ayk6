@@ -18,7 +18,7 @@ public class Student {
     private String adress;
     private String gender;
 
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Course.class,cascade = CascadeType.ALL)
+    @ManyToMany
     private Course course;
 
     public Student(String name, int birthDate, String adress, String gender) {

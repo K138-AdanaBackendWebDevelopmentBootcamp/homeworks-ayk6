@@ -20,8 +20,12 @@ public class Instructor {
     private String adress;
     private String phoneNumber;
 
-    @OneToMany(targetEntity = Course.class, fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OneToMany
     private List<Course> courseList;
+
+    public Instructor() {
+
+    }
 
     public String getName() {
         return name;

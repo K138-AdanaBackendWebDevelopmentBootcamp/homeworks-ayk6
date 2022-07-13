@@ -16,10 +16,10 @@ public class Course {
     private String courseCode;
     private int creditScore;
 
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Student.class,cascade = CascadeType.ALL)
+    @ManyToMany
     private List<Student> studentList;
 
-    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL,targetEntity = Instructor.class)
+    @ManyToOne
     private Instructor instructor;
 
     public Course() {

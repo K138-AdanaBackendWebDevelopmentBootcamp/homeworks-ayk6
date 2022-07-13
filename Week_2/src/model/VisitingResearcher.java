@@ -16,6 +16,10 @@ public class VisitingResearcher extends Instructor {
 
     private int hourlySalary;
 
+    public VisitingResearcher() {
+        super();
+    }
+
     public int getHourlySalary() {
         return hourlySalary;
     }
@@ -31,5 +35,8 @@ public class VisitingResearcher extends Instructor {
 
     public VisitingResearcher(String name, String adress, String phoneNumber) {
         super(name, adress, phoneNumber);
+    }
+
+    public void setCourseList(int i) {
     }
 }

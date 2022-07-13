@@ -9,7 +9,10 @@ public class HybnernateUtil {
 
     private HybnernateUtil(){}
 
-    public static EntityManager getEntityManager(){
+    public static EntityManager buildSessionFactory(){
+        return null;
+    };
+    public static EntityManager getEntityManager(String persistenceUnitName){
         emf = Persistence.createEntityManagerFactory(persistenceUnitName);
         return emf.createEntityManager();
     }

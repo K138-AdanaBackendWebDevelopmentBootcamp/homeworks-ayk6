@@ -1,5 +1,3 @@
-package Week1;
-
 public class C04_PermanentInstructor extends C03_Instructor {
 
     // There are 2 types of instructors; “visiting researcher” or “permanent

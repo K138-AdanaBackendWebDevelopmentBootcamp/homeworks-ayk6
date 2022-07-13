@@ -1,5 +1,3 @@
-package Week1;
-
 public class C03_Instructor {
 
     // Instructors who have a name, an address and a phone number could
