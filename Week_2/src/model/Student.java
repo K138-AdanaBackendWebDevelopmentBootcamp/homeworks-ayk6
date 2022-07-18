@@ -2,6 +2,7 @@ package model;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Student {
@@ -58,5 +59,9 @@ public class Student {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public List<Course> getStudentCourses() {
+        return studentCourses;
     }
 }

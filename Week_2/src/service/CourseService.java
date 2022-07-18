@@ -7,7 +7,6 @@ import repositories.CourseRepository;
 import repositories.CrudRepo;
 import utils.HybnernateUtil;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class CourseService implements CrudRepo<Course>, CourseRepository {
 
     EntityManager em = HybnernateUtil.buildSessionFactory();
     @Override
-    public List<Course> listAll() {
+    public List<Student> listAll() {
         em.getTransaction().begin();
         // List<Course> courseList = em.createQuery("from Course").getResultList();
         return null;
