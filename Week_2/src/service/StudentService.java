@@ -19,7 +19,7 @@ public class StudentService implements CrudRepo<Student>, StudentRepository {
 
 
     @Override
-    public List<Student> listAll() {
+    public List<Course> listAll() {
         /*List<Student> studentList = em.createQuery("from Student ", Student.class).getResultList();
         em.close();
         return studentList;*/

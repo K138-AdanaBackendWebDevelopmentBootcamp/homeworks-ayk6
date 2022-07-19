@@ -14,10 +14,10 @@ public class CourseService implements CrudRepo<Course>, CourseRepository {
 
     EntityManager em = HybnernateUtil.buildSessionFactory();
     @Override
-    public List<Student> listAll() {
+    public List<Course> listAll() {
         em.getTransaction().begin();
-        // List<Course> courseList = em.createQuery("from Course").getResultList();
-        return null;
+        List<Course> courseList = em.createNativeQuery("select * from Course").getResultList();
+        return courseList;
     }
 
     @Override
