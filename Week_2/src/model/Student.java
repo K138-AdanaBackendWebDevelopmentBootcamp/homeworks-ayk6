@@ -62,6 +62,6 @@ public class Student {
     }
 
     public List<Course> getStudentCourses() {
-        return studentCourses;
+        return getStudentCourses();
     }
 }

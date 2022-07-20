@@ -11,7 +11,7 @@ public class CourseController {
     CourseService courseService = new CourseService();
 
     public List<Course> listAllCourse(){
-        return courseService.listAll();
+        return courseService.listAll2();
     }
     public Course findById(int id){
         return courseService.findById(id);

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Week_1/Week_1.iml" filepath="$PROJECT_DIR$/Week_1/Week_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/Week_2.iml" filepath="$PROJECT_DIR$/Week_2/Week_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week_3/Week_3.iml" filepath="$PROJECT_DIR$/Week_3/Week_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/homeworks-ayk6.iml" filepath="$PROJECT_DIR$/homeworks-ayk6.iml" />
     </modules>
   </component>
