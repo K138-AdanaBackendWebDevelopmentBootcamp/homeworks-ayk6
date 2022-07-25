@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Week_3" />
+        <module name="Week_1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="homeworks-ayk6" target="1.5" />
+      <module name="Week_1" target="18" />
       <module name="Week_3" target="18" />
     </bytecodeTargetLevel>
   </component>
