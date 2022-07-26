@@ -10,7 +10,7 @@ public class C02_Course {
     private int creditScore;
 
     private List<C01_Student> studentList;
-    private Week1.C03_Instructor instructor;
+    //private Week1.C03_Instructor instructor;
 
     public String getCourseName() {
         return courseName;
@@ -36,12 +36,12 @@ public class C02_Course {
         this.creditScore = creditScore;
     }
 
-    public C02_Course(String courseName, int courseCode, int creditScore, List<C01_Student> studentList, Week1.C03_Instructor instructor) {
+    public C02_Course(String courseName, int courseCode, int creditScore, List<C01_Student> studentList) {
         this.courseName = courseName;
         this.courseCode = courseCode;
         this.creditScore = creditScore;
         this.studentList = studentList;
-        this.instructor = instructor;
+
 
 
     }
