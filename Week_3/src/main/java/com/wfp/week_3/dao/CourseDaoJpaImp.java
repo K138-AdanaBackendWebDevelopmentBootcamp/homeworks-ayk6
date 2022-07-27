@@ -34,7 +34,7 @@ public class CourseDaoJpaImp implements CourseDAO<Course>{
     }
 
     @Override
-    public void update(Student object, int id) {
+    public void update(Course object, int id) {
     }
 
     @Override
@@ -47,5 +47,10 @@ public class CourseDaoJpaImp implements CourseDAO<Course>{
     @Override
     public Course uptateByID(Course course, int id) {
         return null;
+    }
+
+    @Override
+    public void update(Student student, int id) {
+
     }
 }

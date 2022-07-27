@@ -5,4 +5,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface CourseService<C> extends BaseService <Course>{
+    void update(Course course, int id);
 }

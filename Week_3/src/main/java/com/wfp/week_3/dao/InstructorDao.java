@@ -5,4 +5,6 @@ public interface InstructorDao<Instructor>  extends BaseDAO<Instructor> {
 
     void deleteByName(String name);
     Instructor updateByName(Instructor instructor, String name);
+
+    void update(Instructor course, int id);
 }

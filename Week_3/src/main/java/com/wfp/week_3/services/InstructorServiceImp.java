@@ -2,6 +2,7 @@ package com.wfp.week_3.services;
 
 import com.wfp.week_3.dao.InstructorDao;
 import com.wfp.week_3.model.Instructor;
+import com.wfp.week_3.model.Student;
 
 import java.util.List;
 
@@ -30,6 +31,11 @@ public class InstructorServiceImp implements InstructorService<Instructor>{
     @Override
     public void deleteById(int id) {
         instructorDao.deleteByID(id);
+    }
+
+    @Override
+    public void update(Student course, int id) {
+
     }
 
     @Override
