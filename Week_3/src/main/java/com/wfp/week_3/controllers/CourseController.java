@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/courses{c}")
 public class CourseController implements BaseController<Course> {
 
 

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/student/{c}")
 public class StudentController implements BaseController<Student>{
 
     private final StudentService<Student> studentService;

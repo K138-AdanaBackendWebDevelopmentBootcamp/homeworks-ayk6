@@ -10,7 +10,7 @@ import java.util.List;
 
 @Entity
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,property = "id")
-public class Course extends Instructor {
+public class Course{
 
     @Id
     @GeneratedValue(generator = "course", strategy = GenerationType.SEQUENCE)

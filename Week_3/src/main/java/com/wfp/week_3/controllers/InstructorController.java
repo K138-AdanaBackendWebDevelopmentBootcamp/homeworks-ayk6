@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/instructor/{c}")
 public class InstructorController implements BaseController<Instructor>{
     private final InstructorService<Instructor> instructorService;
 
