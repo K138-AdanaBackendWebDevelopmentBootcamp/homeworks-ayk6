@@ -6,18 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Week_3" />
+        <module name="Project_01" />
         <module name="Week_1" />
+        <module name="Week_3" />
+        <module name="Project_01_TLUSD" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="homeworks-ayk6" target="1.5" />
+      <module name="Project_01" target="1.8" />
+      <module name="Project_01_TLUSD" target="1.8" />
       <module name="Week_1" target="18" />
       <module name="Week_3" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Project_01" options="-parameters" />
+      <module name="Project_01_TLUSD" options="-parameters" />
       <module name="Week_3" options="-parameters" />
     </option>
   </component>

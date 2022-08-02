@@ -7,7 +7,7 @@ import java.util.List;
 public interface BaseDAO <T>{
     List<T> findAll();
     T findById(int id);
-    Course save(T object);
+    Course save(Course object);
     void update(Course object, int id);
     void deleteByID(int id);
 }

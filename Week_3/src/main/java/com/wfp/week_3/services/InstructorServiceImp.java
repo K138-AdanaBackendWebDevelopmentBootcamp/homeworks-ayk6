@@ -6,7 +6,7 @@ import com.wfp.week_3.model.Student;
 
 import java.util.List;
 
-public class InstructorServiceImp implements InstructorService<Instructor>{
+public class InstructorServiceImp implements InstructorService<Instructor> {
     InstructorDao<Instructor> instructorDao;
 
     public InstructorServiceImp(InstructorDao<Instructor> instructorDao) {

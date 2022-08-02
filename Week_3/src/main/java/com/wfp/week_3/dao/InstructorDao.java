@@ -7,4 +7,6 @@ public interface InstructorDao<Instructor>  extends BaseDAO<Instructor> {
     Instructor updateByName(Instructor instructor, String name);
 
     void update(Instructor course, int id);
+
+    Instructor save(Instructor instructor);
 }
