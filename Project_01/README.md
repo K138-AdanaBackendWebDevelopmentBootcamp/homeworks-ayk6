@@ -1,5 +1,5 @@
 
-# wfp-kodluyoruz k-138 backend bootcamp ending project
+# wfp-kodluyoruz k-138 back-end web development bootcamp ending project
 
 ## School Management System
 
