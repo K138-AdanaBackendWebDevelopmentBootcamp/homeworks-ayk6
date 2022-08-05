@@ -1,7 +1,7 @@
 
-## wfp-kodluyoruz k-138 backend bootcamp ending project
+# wfp-kodluyoruz k-138 backend bootcamp ending project
 
-# School Management System
+## School Management System
 
 - this is a spring boot project
 - h2 is used as database
